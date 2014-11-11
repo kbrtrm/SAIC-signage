@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SAIC Signage Mockup</title>
+
+  <link rel="stylesheet" href="css/build/minified/global.css">
+</head>
+
+<body>
+
+  <div class="now">
+    <h1 class="now-time">Now</h1>
+  </div>
+  
+
+  <script src="js/build/production.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $('.now-time').html(moment().format('h:mm A'));
+    function update() {
+      $('.now-time').html(moment().format('h:mm A'));
+    }
+
+    setInterval(update, 1000);
+  });
+  </script>
+
+</body>
+
+</html>

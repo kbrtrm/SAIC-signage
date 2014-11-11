@@ -1,0 +1,55 @@
+$backgroundColor: #333;
+$spacing: 1rem;
+$links: #35a8ff;
+$text-color: #fff;
+$container-padding: 20px;
+$item-padding: 10px;
+
+@import "libs/normalize";
+@import "libs/owl.carousel";
+@import "owl.theme";
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: $backgroundColor;
+}
+body {
+  background: white;
+}
+
+a {
+  color: $links;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: darken($links, 25%);
+  }
+}
+
+.now { 
+  width: 330px;
+  color: $text-color;
+  padding: $container-padding;
+  background: #000; 
+  height: 100%; 
+  display: block; 
+  position: fixed; 
+  left: 0px;
+}
+
+.moving-box {
+  background: #ccc;
+  width: 100px;
+  height: 100px;
+  animation: swing 1s ease alternate infinite;
+}
+
+// Example of ignoring prefixes
+@keyframes swing {
+  100% {
+    transform: translateX(300px);
+  }
+}
