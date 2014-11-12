@@ -6,12 +6,12 @@ $container-padding: 20px;
 $item-padding: 10px;
 
 @import "libs/normalize";
-@import "libs/owl.carousel";
-@import "owl.theme";
-
+@import "libs/weather-icons";
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
