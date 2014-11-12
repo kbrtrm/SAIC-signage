@@ -17,7 +17,7 @@
     <h2 id="currentTemp"></h2>
     <h2 id="condish"></h2>
     <br>
-    <i class="wi wi-day-cloudy"></i>
+    <i class=""></i>
   </div>
 
 
@@ -52,7 +52,26 @@
 
   // echo temperature
   document.getElementById("currentTemp").innerHTML = condition.getTemperature().toFixed(0);
-  document.getElementById("condish").innerHTML = condition.getIcon();
+
+  // display icon (forecast.io => weather-icons)
+  var conditionDesc = condition.getIcon();
+  var conditionTrans = {
+    'partly-cloudy-day': 'wi wi-day-cloudy'
+  }
+
+  // look at the conditionTrans object for translation from forecast to wi
+  function translateCondition(current) {
+    if (current in conditionTrans) {
+      return conditionTrans[current];
+    } else {
+      return current;
+    }
+  }
+
+  // add proper wi class to i
+  $('i').addClass(translateCondition(conditionDesc));
+
+  document.getElementById("condish").innerHTML = conditionDesc;
   });
   </script>
 
