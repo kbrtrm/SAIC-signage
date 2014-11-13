@@ -1,7 +1,7 @@
 <?php
 // File Name: proxy.php
 
-$api_key = 'b69c2ae78db89b3b73c52686db073ca6';
+$api_key = '190b22b00a12c2221b59b8785beb06e8';
 
 $API_ENDPOINT = 'https://api.forecast.io/forecast/';
 $url = $API_ENDPOINT . $api_key . '/';
@@ -11,3 +11,5 @@ $url = $url . urldecode($_GET['url']);
 $url = file_get_contents($url);
 
 print_r($url);
+
+

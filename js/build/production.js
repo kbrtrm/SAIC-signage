@@ -9814,7 +9814,7 @@ function ForecastIO() {
 		xhr.open('GET', request_url, false);
 		xhr.send();
 
-        if(content != '' && (content)) {
+        if(content != '' && (content)) { 
 			return JSON.parse(content);
 		} else {
 			return false;
