@@ -13,11 +13,17 @@
 <body>
 
   <div class="now">
-    <h1 class="now-time">Now</h1>
-    <h2 id="currentTemp"></h2>
-    <h2 id="condish"></h2>
-    <br>
-    <i class=""></i>
+    <div class="time-weather-con">
+      <div class="weather-con">
+        <!-- <h2 id="condish"></h2> -->
+        <i class="currentCon"></i>
+        <h2 id="currentTemp"></h2>
+      </div> 
+      <div class="time-con">
+        <h1 class="now-date"></h1>
+        <h1 class="now-time"></h1>
+      </div> 
+    </div>
   </div>
 
 
@@ -28,9 +34,15 @@
 
   <script>
   $(document).ready(function(){
-    $('.now-time').html(moment().format('h:mm A'));
+    $('.now-time').html(moment().format('h:mm'));
+    $('.now-date').html(moment().format('MMMM d'));
     function update() {
-      $('.now-time').html(moment().format('h:mm A'));
+      $('.now-time').html(moment().format('h:mm'));
+      if (moment().format('h') < 10) {
+        $('.time-con').removeClass('time-con-padded');
+      } else if (moment().format('h') >= 10) {
+        $('.time-con').addClass('time-con-padded');
+      }
     }
 
     setInterval(update, 1000);
@@ -48,31 +60,43 @@
    * GET CURRENT CONDITIONS
    */
   var condition = forecast.getCurrentConditions(latitude, longitude);
-  console.log(condition);
 
   // echo temperature
-  document.getElementById("currentTemp").innerHTML = condition.getTemperature().toFixed(0);
+  $("#currentTemp").html(condition.getTemperature().toFixed(0));
 
-  // display icon (forecast.io => weather-icons)
+  // get forecast.io icon info
   var conditionDesc = condition.getIcon();
+
+  // itty bitty library for forecast.io => weathericons
   var conditionTrans = {
-    'partly-cloudy-day': 'wi wi-day-cloudy'
+    'partly-cloudy-day': 'wi wi-day-cloudy',
+    'clear-day': 'wi wi-day-sunny',
+    'clear-night': 'wi wi-night-clear',
+    'rain': 'wi wi-rain',
+    'snow': 'wi wi-snow',
+    'sleet': 'wi wi-rain-mix',
+    'wind': 'wi wi-windy',
+    'fog': 'wi wi-fog',
+    'cloudy': 'wi wi-cloudy',
+    'partly-cloudy-night': 'wi wi-night-cloudy'
   }
 
-  // look at the conditionTrans object for translation from forecast to wi
+  // look at the conditionTrans object for translation from forecast to weathericons
   function translateCondition(current) {
     if (current in conditionTrans) {
       return conditionTrans[current];
     } else {
-      return current;
+      return 'fa fa-smile-o';
     }
   }
 
   // add proper wi class to i
-  $('i').addClass(translateCondition(conditionDesc));
+  $('i.currentCon').addClass(translateCondition(conditionDesc));
 
-  document.getElementById("condish").innerHTML = conditionDesc;
+  // display text description of current conditions
+  $("#condish").html(conditionDesc);
   });
+
   </script>
 
 </body>
