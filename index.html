@@ -14,18 +14,18 @@
 
   <div class="now">
     <div class="time-weather-con">
-      <div class="weather-con">
+      <div class="weather-con" style="display:none;">
         <!-- <h2 id="condish"></h2> -->
         <i class="currentCon"></i>
         <h2 id="currentTemp"></h2>
       </div> 
-      <div class="time-con">
+      <div class="time-con time-con-padded">
         <h1 class="now-date"></h1>
         <h1 class="now-time"></h1>
       </div> 
-      <div class="sun-con">
-        <span class="sunrise"><i class="wi wi-sunrise"></i></span>
-        <span class="sunset"><i class="wi wi-sunset"></i></span>
+      <div class="sun-con" style="display:none;">
+        <span class="sunrise"></span>
+        <span class="sunset"></span>
         <!-- <span class="sunlight"><i class="fa fa-clock-o"></i></span> -->
       </div>
     </div>
@@ -106,14 +106,18 @@
     var today = moment().format('D MMMM');
     var dayOfYear = moment().format('DDD')-1;
     console.log(today, dayOfYear);
-    $('.sunrise').append( moment(json[dayOfYear][today].sunrise, 'hh:mm').format('h:mma') );
-    $('.sunset').append( moment(json[dayOfYear][today].sunset, 'hh:mm').format('h:mma') );
+    $('.sunrise').append( '<i class="wi wi-sunrise"></i>'+moment(json[dayOfYear][today].sunrise, 'hh:mm').format('h:mma') );
+    $('.sunset').append( '<i class="wi wi-sunset"></i>'+moment(json[dayOfYear][today].sunset, 'hh:mm').format('h:mma') );
     // $('.sunlight').append( json[dayOfYear][today].sunlight );
-
-
    });
 
+  $('.weather-con').fadeIn('slow');
+
+  $('.time-con').hover(function(){
+    $('.sun-con').toggleClass('fade-in')
   });
+
+});
 
 
   </script>

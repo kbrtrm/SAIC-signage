@@ -103,11 +103,17 @@ i {
   color: $text-color-secondary;
   text-align: center;
   font-size: 12px;
+  transition: all .5s;
 }
 
 .sun-con i {
   font-size: 12px;
   margin-right: 4px;
+}
+
+.fade-in {
+  display: block!important;
+  transition: all .5s;
 }
 
 // Example of ignoring prefixes
