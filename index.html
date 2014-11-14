@@ -29,6 +29,35 @@
         <!-- <span class="sunlight"><i class="fa fa-clock-o"></i></span> -->
       </div>
     </div>
+    <div class="event-column">
+      <div class="event-con" data-date-time="">
+        <span class="dept">
+          Career + Co-op Center
+        </span>
+        <span class="duration">
+          Until 12:00 p.m.
+        </span>
+        <span class="title">
+          <h1>Good Morning!
+          with Coffee & Bagels</h1>
+        </span>
+        <span class="location">
+          116 S. Michigan, 14th floor
+        </span>
+      </div>
+      <div class="event-con" data-date-time="">
+        <span class="duration">
+          Until 12:00 p.m.
+        </span>
+        <span class="title">
+          <h1>Undergraduate Student Admissions Tours</h1>
+        </span>
+        <span class="location">
+          LeRoy Neiman Center <br>
+          First Floor Information Desk
+        </span>
+      </div>
+    </div>
   </div>
   <div class="upcoming-events">
     <div class="top">
@@ -112,6 +141,10 @@
    });
 
   $('.weather-con').fadeIn('slow');
+
+  $('.event-con').each(function(){
+    $(this).fadeIn('slow');
+  })
 
   $('.time-con').hover(function(){
     $('.sun-con').toggleClass('fade-in')
