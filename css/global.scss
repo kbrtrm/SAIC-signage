@@ -5,7 +5,7 @@ $text-color: #fff;
 $text-color-secondary: #888;
 $text-color-dark: #222;
 $container-padding: 20px;
-$event-vert-spacing: 10px;
+$event-vert-spacing: 20px;
 $item-padding: 10px;
 
 
@@ -99,6 +99,11 @@ i {
   width: 100%;
   height: 160px;
   border-bottom: 1px solid #fff;
+  position: fixed;
+}
+
+.upcoming-events .main {
+  padding-top: 160px;
 }
 
 .sun-con {
@@ -121,6 +126,12 @@ i {
 .event-column {
   padding: $container-padding;
   padding-top: 50px;
+  max-width: 330px;
+  float: left;
+}
+
+.main .event-column {
+  padding-right: 0px;
 }
 
 .event-con {
@@ -128,6 +139,16 @@ i {
   color: #000;
   padding: $container-padding;
   display: none;
+}
+
+.upcoming-events .main .event-con {
+  background: #222;
+  color: #fff;
+  padding: $container-padding;
+}
+
+.upcoming-events .dept {
+  color: #fff;
 }
 
 .event-con > * {
