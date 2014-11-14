@@ -23,6 +23,11 @@
         <h1 class="now-date"></h1>
         <h1 class="now-time"></h1>
       </div> 
+      <div class="sun-con">
+        <span class="sunrise"><i class="wi wi-sunrise"></i></span>
+        <span class="sunset"><i class="wi wi-sunset"></i></span>
+        <!-- <span class="sunlight"><i class="fa fa-clock-o"></i></span> -->
+      </div>
     </div>
   </div>
   <div class="upcoming-events">
@@ -52,8 +57,8 @@
 
     setInterval(update, 1000);
 
-        var latitude = '41.8801994';
-        var longitude = '-87.6272505';
+  var latitude = '41.8801994';
+  var longitude = '-87.6272505';
 
   var forecast = new ForecastIO();
 
@@ -96,7 +101,20 @@
 
   // display text description of current conditions
   $("#condish").html(conditionDesc);
+
+  $.getJSON( "chicago-sunrise-sunset.json", function( json ) {
+    var today = moment().format('D MMMM');
+    var dayOfYear = moment().format('DDD')-1;
+    console.log(today, dayOfYear);
+    $('.sunrise').append( moment(json[dayOfYear][today].sunrise, 'hh:mm').format('h:mma') );
+    $('.sunset').append( moment(json[dayOfYear][today].sunset, 'hh:mm').format('h:mma') );
+    // $('.sunlight').append( json[dayOfYear][today].sunlight );
+
+
+   });
+
   });
+
 
   </script>
 
