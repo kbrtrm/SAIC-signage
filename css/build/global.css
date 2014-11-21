@@ -3208,6 +3208,7 @@ i {
 
 .main .event-column {
   padding-right: 0px;
+  max-width: 310px;
 }
 
 .event-con {
@@ -3251,6 +3252,16 @@ i {
 .title h1 {
   font-size: 1.3em;
   line-height: 1.3;
+}
+
+.title h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.event-con img {
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes swing {
