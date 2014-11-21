@@ -3,7 +3,9 @@ $spacing: 1rem;
 $links: #35a8ff;
 $text-color: #fff;
 $text-color-secondary: #888;
+$text-color-dark: #222;
 $container-padding: 20px;
+$event-vert-spacing: 20px;
 $item-padding: 10px;
 
 
@@ -97,6 +99,11 @@ i {
   width: 100%;
   height: 160px;
   border-bottom: 1px solid #fff;
+  position: fixed;
+}
+
+.upcoming-events .main {
+  padding-top: 160px;
 }
 
 .sun-con {
@@ -115,6 +122,73 @@ i {
   display: block!important;
   transition: all .5s;
 }
+
+.event-column {
+  padding: $container-padding;
+  padding-top: 50px;
+  max-width: 330px;
+  float: left;
+}
+
+.main .event-column {
+  padding-right: 0px;
+  max-width: 310px;
+}
+
+.event-con {
+  background: #fff;
+  color: #000;
+  padding: $container-padding;
+  display: none;
+}
+
+.upcoming-events .main .event-con {
+  background: #222;
+  color: #fff;
+  padding: $container-padding;
+}
+
+.upcoming-events .dept {
+  color: #fff;
+}
+
+.event-con > * {
+  display: block;
+}
+
+.event-con > * + * {
+  margin-top: 7px;
+}
+
+.event-con + .event-con {
+  margin-top: $event-vert-spacing;
+}
+
+.dept {
+  color: $text-color-dark;
+  padding-bottom: 10px;
+}
+
+.duration {
+  color: $text-color-secondary;
+}
+
+.title h1 {
+  font-size: 1.3em;
+  line-height: 1.3;
+}
+
+.title h2 {
+  font-size: 1.2em;
+  font-weight: normal; 
+}
+
+.event-con img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 // Example of ignoring prefixes
 @keyframes swing {

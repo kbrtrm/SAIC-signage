@@ -16,10 +16,11 @@
     <div class="time-weather-con">
       <div class="weather-con" style="display:none;">
         <!-- <h2 id="condish"></h2> -->
+
         <i class="currentCon"></i>
         <h2 id="currentTemp"></h2>
       </div> 
-      <div class="time-con time-con-padded">
+      <div class="time-con time-con-padded" style="display:none;">
         <h1 class="now-date"></h1>
         <h1 class="now-time"></h1>
       </div> 
@@ -29,13 +30,102 @@
         <!-- <span class="sunlight"><i class="fa fa-clock-o"></i></span> -->
       </div>
     </div>
+    <div class="event-column">
+      <div class="event-con" data-date-time="">
+        <span class="dept">
+          Career + Co-op Center
+        </span>
+        <span class="duration">
+          Until 12:00 p.m.
+        </span>
+        <span class="title">
+          <h1>Good Morning!
+          with Coffee & Bagels</h1>
+        </span>
+        <span class="location">
+          116 S. Michigan, 14th floor
+        </span>
+      </div>
+      <div class="event-con" data-date-time="">
+        <span class="duration">
+          Until 12:00 p.m.
+        </span>
+        <span class="title">
+          <h1>Undergraduate Student Admissions Tours</h1>
+        </span>
+        <span class="location">
+          LeRoy Neiman Center <br>
+          First Floor Information Desk
+        </span>
+      </div>
+    </div>
   </div>
   <div class="upcoming-events">
     <div class="top">
-      
+      <!-- <i class="fa fa-dot-circle-o"></i> -->
     </div>
     <div class="main">
-      
+      <div class="event-column column-1">
+        <div class="event-con" data-date-time="">
+          <span class="duration">
+            12:00–1:00 p.m.
+          </span>
+          <span class="title">
+            <h1>Study Abroad Workshop</h1>
+          </span>
+          <span class="location">
+            Sullivan Building, room 1203J
+          </span>
+        </div>
+        <div class="event-con" data-date-time="">
+          <span class="dept">
+            ATS Grad Lecture
+          </span>
+          <span class="duration">
+            12:00–1:00 p.m.
+          </span>
+          <span class="title">
+            <h1>Tobias Zehnter</h1>
+          </span>
+          <span class="location">
+            MacLean Center, 4th floor, black box room
+          </span>
+        </div>
+      </div>
+
+      <div class="event-column column-2">
+        <div class="event-con" data-date-time="">
+          <span class="dept">
+            Faculty Sabbatical Lecture
+          </span>
+          <img class="event-img" src="images/u84.png" alt="Nicholas Collins Faculty Sabbatical Lecture">
+          <span class="duration">
+            4:15–5:15 p.m.
+          </span>
+          <span class="title">
+            <h1>Nicholas Collins</h1>
+            <h2>The Royal Touch</h2>
+          </span>
+          <span class="location">
+            Sullivan Building, room 1203J
+          </span>
+        </div>
+        <div class="event-con" data-date-time="">
+          <span class="dept">
+            ATS Grad Lecture
+          </span>
+          <span class="duration">
+            12:00–1:00 p.m.
+          </span>
+          <span class="title">
+            <h1>Lorem ipsum dolor sit</h1>
+          </span>
+          <span class="location">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad.
+          </span>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -53,6 +143,7 @@
       } else if (moment().format('h') >= 10) {
         $('.time-con').addClass('time-con-padded');
       }
+      $('.time-con').fadeIn('slow');
     }
 
     setInterval(update, 1000);
@@ -68,7 +159,7 @@
   var condition = forecast.getCurrentConditions(latitude, longitude);
 
   // echo temperature
-  $("#currentTemp").html(condition.getTemperature().toFixed(0));
+  $('#currentTemp').html(condition.getTemperature().toFixed(0));
 
   // get forecast.io icon info
   var conditionDesc = condition.getIcon();
@@ -100,9 +191,9 @@
   $('i.currentCon').addClass(translateCondition(conditionDesc));
 
   // display text description of current conditions
-  $("#condish").html(conditionDesc);
+  $('#condish').html(conditionDesc);
 
-  $.getJSON( "chicago-sunrise-sunset.json", function( json ) {
+  $.getJSON( 'chicago-sunrise-sunset.json', function( json ) {
     var today = moment().format('D MMMM');
     var dayOfYear = moment().format('DDD')-1;
     console.log(today, dayOfYear);
@@ -113,8 +204,12 @@
 
   $('.weather-con').fadeIn('slow');
 
+  $('.event-con').each(function(){
+    $(this).fadeIn('slow');
+  })
+
   $('.time-con').hover(function(){
-    $('.sun-con').toggleClass('fade-in')
+    $('.sun-con').toggleClass('fade-in');
   });
 
 });
