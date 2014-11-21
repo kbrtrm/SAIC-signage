@@ -1,0 +1,362 @@
+[
+  {
+    "_id": "546fafcf65ce0f7c8220cd30",
+    "index": 0,
+    "meta": {
+      "dateStart": "2014-11-22 09:00",
+      "dateEnd": "2014-11-22 12:00",
+      "type": "lecture",
+      "department": "AIADO"
+    },
+    "eventContent": {
+      "title": "Esther Britt",
+      "description": "Dolor excepteur sit cupidatat cillum sit commodo.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcfa02a30c60f93967a",
+    "index": 1,
+    "meta": {
+      "dateStart": "2014-11-23 09:00",
+      "dateEnd": "2014-11-23 12:00",
+      "type": "event",
+      "department": "Contemporary Practices"
+    },
+    "eventContent": {
+      "title": "Jennifer Castaneda",
+      "description": "Excepteur mollit elit pariatur occaecat minim aliqua nisi fugiat adipisicing.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcfb406d5229578b36d",
+    "index": 2,
+    "meta": {
+      "dateStart": "2014-11-24 09:00",
+      "dateEnd": "2014-11-24 12:00",
+      "type": "event",
+      "department": "Liberal Arts"
+    },
+    "eventContent": {
+      "title": "Meadows Perez",
+      "description": "Cillum nulla officia labore sint ea excepteur sint cillum velit consequat pariatur.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf11f47d9cc4e059cb",
+    "index": 3,
+    "meta": {
+      "dateStart": "2014-11-25 09:00",
+      "dateEnd": "2014-11-25 12:00",
+      "type": "lecture",
+      "department": "Liberal Arts"
+    },
+    "eventContent": {
+      "title": "Little Burgess",
+      "description": "Nisi voluptate id sunt labore.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf8db2b63a1f52fa1c",
+    "index": 4,
+    "meta": {
+      "dateStart": "2014-11-26 09:00",
+      "dateEnd": "2014-11-26 12:00",
+      "type": "exhibition",
+      "department": "Fashion"
+    },
+    "eventContent": {
+      "title": "Mosley Carson",
+      "description": "Occaecat minim ut duis ullamco sit laborum irure laborum est ut amet amet ut.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf880d186902626c0f",
+    "index": 5,
+    "meta": {
+      "dateStart": "2014-11-27 09:00",
+      "dateEnd": "2014-11-27 12:00",
+      "type": "exhibition",
+      "department": "Fiber and Material Studies"
+    },
+    "eventContent": {
+      "title": "Aurelia Horn",
+      "description": "In nulla id ad officia labore do fugiat minim deserunt voluptate Lorem incididunt reprehenderit magna.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcfa21bea0e2252260a",
+    "index": 6,
+    "meta": {
+      "dateStart": "2014-11-28 09:00",
+      "dateEnd": "2014-11-28 12:00",
+      "type": "lecture",
+      "department": "AIADO"
+    },
+    "eventContent": {
+      "title": "Gillespie Bishop",
+      "description": "Deserunt do nulla nostrud quis aliqua ea veniam amet quis.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf7a1fdf8a14a778d8",
+    "index": 7,
+    "meta": {
+      "dateStart": "2014-11-29 09:00",
+      "dateEnd": "2014-11-29 12:00",
+      "type": "lecture",
+      "department": "AIADO"
+    },
+    "eventContent": {
+      "title": "Mccormick Macdonald",
+      "description": "Sunt fugiat reprehenderit cillum exercitation nulla tempor velit in.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcffa22f75fab8a156d",
+    "index": 8,
+    "meta": {
+      "dateStart": "2014-11-22 09:00",
+      "dateEnd": "2014-11-22 12:00",
+      "type": "exhibition",
+      "department": "Ceramics"
+    },
+    "eventContent": {
+      "title": "Ellis Faulkner",
+      "description": "Minim fugiat minim ea magna aliquip.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf105e60b02400787f",
+    "index": 9,
+    "meta": {
+      "dateStart": "2014-11-22 12:00",
+      "dateEnd": "2014-11-22 13:00",
+      "type": "exhibition",
+      "department": "Fiber and Material Studies"
+    },
+    "eventContent": {
+      "title": "Carmella Barnett",
+      "description": "Incididunt laboris excepteur non cupidatat et.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcfb190bea53177d677",
+    "index": 10,
+    "meta": {
+      "dateStart": "2014-11-22 12:00",
+      "dateEnd": "2014-11-22 15:00",
+      "type": "lecture",
+      "department": "Visual and Critical Studies"
+    },
+    "eventContent": {
+      "title": "Bobbie Burris",
+      "description": "Incididunt sunt aliquip cillum consectetur cupidatat.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf9f811de839af1586",
+    "index": 11,
+    "meta": {
+      "dateStart": "2014-11-22 17:00",
+      "dateEnd": "2014-11-22 19:00",
+      "type": "exhibition",
+      "department": "Fashion"
+    },
+    "eventContent": {
+      "title": "Beatrice Tucker",
+      "description": "Quis excepteur id deserunt minim tempor in veniam incididunt enim duis dolor aliquip.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcffa22f75fab8a156d",
+    "index": 8,
+    "meta": {
+      "dateStart": "2014-11-23 09:00",
+      "dateEnd": "2014-11-23 12:00",
+      "type": "exhibition",
+      "department": "Ceramics"
+    },
+    "eventContent": {
+      "title": "Ellis Faulkner",
+      "description": "Minim fugiat minim ea magna aliquip.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf105e60b02400787f",
+    "index": 9,
+    "meta": {
+      "dateStart": "2014-11-23 12:00",
+      "dateEnd": "2014-11-23 13:00",
+      "type": "exhibition",
+      "department": "Fiber and Material Studies"
+    },
+    "eventContent": {
+      "title": "Carmella Barnett",
+      "description": "Incididunt laboris excepteur non cupidatat et.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcfb190bea53177d677",
+    "index": 10,
+    "meta": {
+      "dateStart": "2014-11-23 12:00",
+      "dateEnd": "2014-11-23 15:00",
+      "type": "lecture",
+      "department": "Visual and Critical Studies"
+    },
+    "eventContent": {
+      "title": "Bobbie Burris",
+      "description": "Incididunt sunt aliquip cillum consectetur cupidatat.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf9f811de839af1586",
+    "index": 11,
+    "meta": {
+      "dateStart": "2014-11-23 17:00",
+      "dateEnd": "2014-11-23 19:00",
+      "type": "exhibition",
+      "department": "Fashion"
+    },
+    "eventContent": {
+      "title": "Beatrice Tucker",
+      "description": "Quis excepteur id deserunt minim tempor in veniam incididunt enim duis dolor aliquip.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcffa22f75fab8a156d",
+    "index": 8,
+    "meta": {
+      "dateStart": "2014-11-24 09:00",
+      "dateEnd": "2014-11-24 12:00",
+      "type": "exhibition",
+      "department": "Ceramics"
+    },
+    "eventContent": {
+      "title": "Ellis Faulkner",
+      "description": "Minim fugiat minim ea magna aliquip.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf105e60b02400787f",
+    "index": 9,
+    "meta": {
+      "dateStart": "2014-11-24 12:00",
+      "dateEnd": "2014-11-24 13:00",
+      "type": "exhibition",
+      "department": "Fiber and Material Studies"
+    },
+    "eventContent": {
+      "title": "Carmella Barnett",
+      "description": "Incididunt laboris excepteur non cupidatat et.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcfb190bea53177d677",
+    "index": 10,
+    "meta": {
+      "dateStart": "2014-11-24 12:00",
+      "dateEnd": "2014-11-24 15:00",
+      "type": "lecture",
+      "department": "Visual and Critical Studies"
+    },
+    "eventContent": {
+      "title": "Bobbie Burris",
+      "description": "Incididunt sunt aliquip cillum consectetur cupidatat.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf9f811de839af1586",
+    "index": 11,
+    "meta": {
+      "dateStart": "2014-11-24 17:00",
+      "dateEnd": "2014-11-24 19:00",
+      "type": "exhibition",
+      "department": "Fashion"
+    },
+    "eventContent": {
+      "title": "Beatrice Tucker",
+      "description": "Quis excepteur id deserunt minim tempor in veniam incididunt enim duis dolor aliquip.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcffa22f75fab8a156d",
+    "index": 8,
+    "meta": {
+      "dateStart": "2014-11-25 09:00",
+      "dateEnd": "2014-11-25 12:00",
+      "type": "exhibition",
+      "department": "Ceramics"
+    },
+    "eventContent": {
+      "title": "Ellis Faulkner",
+      "description": "Minim fugiat minim ea magna aliquip.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf105e60b02400787f",
+    "index": 9,
+    "meta": {
+      "dateStart": "2014-11-25 12:00",
+      "dateEnd": "2014-11-25 13:00",
+      "type": "exhibition",
+      "department": "Fiber and Material Studies"
+    },
+    "eventContent": {
+      "title": "Carmella Barnett",
+      "description": "Incididunt laboris excepteur non cupidatat et.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcfb190bea53177d677",
+    "index": 10,
+    "meta": {
+      "dateStart": "2014-11-25 12:00",
+      "dateEnd": "2014-11-25 15:00",
+      "type": "lecture",
+      "department": "Visual and Critical Studies"
+    },
+    "eventContent": {
+      "title": "Bobbie Burris",
+      "description": "Incididunt sunt aliquip cillum consectetur cupidatat.",
+      "image": "http://placehold.it/32x32"
+    }
+  },
+  {
+    "_id": "546fafcf9f811de839af1586",
+    "index": 11,
+    "meta": {
+      "dateStart": "2014-11-25 17:00",
+      "dateEnd": "2014-11-25 19:00",
+      "type": "exhibition",
+      "department": "Fashion"
+    },
+    "eventContent": {
+      "title": "Beatrice Tucker",
+      "description": "Quis excepteur id deserunt minim tempor in veniam incididunt enim duis dolor aliquip.",
+      "image": "http://placehold.it/32x32"
+    }
+  }
+]
